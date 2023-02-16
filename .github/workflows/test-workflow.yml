@@ -1,0 +1,14 @@
+name: test-workflow
+
+on:
+  push:
+    branches: [ $default-branch ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - shell: bash
+        run: |
+          echo 'hello world'
