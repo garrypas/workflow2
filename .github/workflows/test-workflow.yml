@@ -1,8 +1,4 @@
-name: test-workflow
-
-on:
-  push:
-    branches: [ $default-branch ]
+name: reusable workflow
 
 jobs:
   build:
