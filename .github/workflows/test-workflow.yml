@@ -17,6 +17,7 @@ jobs:
 
       - name: run test.sh
         run: |
+          ls -Al
           chmod +x .test-workflows/scripts/deployment/test.sh
           bash .test-workflows/scripts/deployment/test.sh
           rm -rf .test-workflows
