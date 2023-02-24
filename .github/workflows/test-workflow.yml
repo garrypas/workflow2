@@ -13,7 +13,7 @@ jobs:
         with:
           repository: garrypas/workflow2
           ref: main
-          path: .workflow2/scripts/deployment/test.sh
+          path: .workflow2
 
       - name: run test.sh
         run: |
