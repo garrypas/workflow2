@@ -18,7 +18,7 @@ jobs:
       - name: run test.sh
         run: |
           chmod +x scripts/deployment/test.sh
-          sh scripts/deployment/test.sh
+          bash scripts/deployment/test.sh
 
       - shell: bash
         run: |
