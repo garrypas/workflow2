@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: get test.sh
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: garrypas/workflow2
           ref: main
