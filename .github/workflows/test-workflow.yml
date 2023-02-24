@@ -11,7 +11,7 @@ jobs:
       - name: get test.sh
         uses: actions/checkout@v2
         with:
-          repository: garrypas/test-workflows
+          repository: garrypas/test-workflows@main/scripts/deployment/test.sh
           ref: main
           path: scripts/deployment/test.sh
 
