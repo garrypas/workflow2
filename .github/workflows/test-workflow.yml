@@ -8,6 +8,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name:
+        uses: actions/checkout@v2
+        with:
+          repository: garrypas/test-workflows
+          ref: main
+          path: scripts/deployment/test.sh
+
       - shell: bash
         run: |
           echo 'hello world'
