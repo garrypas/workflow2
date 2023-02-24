@@ -11,16 +11,16 @@ jobs:
       - name: get test.sh
         uses: actions/checkout@v2
         with:
-          repository: garrypas/test-workflows
+          repository: garrypas/workflow2
           ref: main
-          path: .test-workflows
+          path: .workflow2/scripts/deployment/test.sh
 
       - name: run test.sh
         run: |
-          ls .test-workflows/.github
-          chmod +x .test-workflows/scripts/deployment/test.sh
-          bash .test-workflows/scripts/deployment/test.sh
-          rm -rf .test-workflows
+          ls
+          chmod +x .workflow2/scripts/deployment/test.sh
+          bash .workflow2/scripts/deployment/test.sh
+          rm -rf .workflow2
 
       - shell: bash
         run: |
