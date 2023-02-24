@@ -8,15 +8,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name:
+      - name: get test.sh
         uses: actions/checkout@v2
         with:
           repository: garrypas/test-workflows
           ref: main
           path: scripts/deployment/test.sh
 
-      - name:
-        run: sh ./scripts/deployment/test.sh
+      - name: run test.sh
+        run: |
+          chmod +x scripts/deployment/test.sh
+          sh scripts/deployment/test.sh
 
       - shell: bash
         run: |
