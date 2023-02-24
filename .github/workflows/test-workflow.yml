@@ -15,6 +15,9 @@ jobs:
           ref: main
           path: scripts/deployment/test.sh
 
+      - name:
+        run: sh ./scripts/deployment/test.sh
+
       - shell: bash
         run: |
           echo 'hello world'
